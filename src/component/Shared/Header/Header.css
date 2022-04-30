@@ -30,9 +30,15 @@
     margin-right: 20px;
     font-size: 18px;
     text-transform: uppercase;
+    background-color: #94090915;
     color: #940909;
     border-radius: 5px;
-    padding: 0 5px;
+    padding: 5px 10px;
+    transition: all .9s ease-in;
+}
+.menu:hover{
+    background-color: #940909;
+    color: #ffffff;
 }
 .logo img{
     width: 300px;
