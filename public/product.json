@@ -1,0 +1,56 @@
+[
+    {
+        "_id": "1",
+        "name": "Modern Furniture",
+        "img": "https://www.linkpicture.com/q/pngwing.com-30.png",
+        "description": "Sentiments two occasional affronting solicitude travelling and one more contrasted.",
+        "price": 100,
+        "quantity": 12,
+        "supplier": "Mr. Arman"
+    },
+    {
+        "_id": "2",
+        "name": "Modern Furniture",
+        "img": "https://www.linkpicture.com/q/pngwing.com-30.png",
+        "description": "Sentiments two occasional affronting solicitude travelling and one more contrasted.",
+        "price": 100,
+        "quantity": 12,
+        "supplier": "Mr. Arman"
+    },
+    {
+        "_id": "3",
+        "name": "Modern Furniture",
+        "img": "https://www.linkpicture.com/q/pngwing.com-30.png",
+        "description": "Sentiments two occasional affronting solicitude travelling and one more contrasted.",
+        "price": 100,
+        "quantity": 12,
+        "supplier": "Mr. Arman"
+    },
+    {
+        "_id": "4",
+        "name": "Modern Furniture",
+        "img": "https://www.linkpicture.com/q/pngwing.com-30.png",
+        "description": "Sentiments two occasional affronting solicitude travelling and one more contrasted.",
+        "price": 100,
+        "quantity": 12,
+        "supplier": "Mr. Arman"
+    },
+    {
+        "_id": "5",
+        "name": "Modern Furniture",
+        "img": "https://www.linkpicture.com/q/pngwing.com-30.png",
+        "description": "Sentiments two occasional affronting solicitude travelling and one more contrasted.",
+        "price": 100,
+        "quantity": 12,
+        "supplier": "Mr. Arman"
+    },
+    {
+        "_id": "6",
+        "name": "Modern Furniture",
+        "img": "https://www.linkpicture.com/q/pngwing.com-30.png",
+        "description": "Sentiments two occasional affronting solicitude travelling and one more contrasted.",
+        "price": 100,
+        "quantity": 12,
+        "supplier": "Mr. Arman"
+    }
+]
