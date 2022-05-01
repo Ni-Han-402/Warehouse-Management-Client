@@ -1,9 +1,17 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import logo from '../../../images/sofa-mart-logo.png'
 import './Header.css'
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleLogout = () =>{
+        signOut(auth);
+    }
     return (
         <>
             <div className="header">
@@ -26,7 +34,13 @@ const Header = () => {
                             <Link className='menu' to={'/about'}>About</Link>
                         </div>
                         <div className="login">
-                            <Link className='menu login-menu' to={'/login'}>Login</Link>
+                            {
+                                user ?
+                                <button onClick={handleLogout} className='btn'>Logout</button>
+                                :
+                                <Link className='menu btn' to={'/login'}>Login</Link>
+                            }
+                            
                         </div>
                     </div>
                 </div>
