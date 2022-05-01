@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAVZI476lhHBCTKSBkG3xoVgwpu6Qdrg8A",
-  authDomain: "sofa-mart.firebaseapp.com",
-  projectId: "sofa-mart",
-  storageBucket: "sofa-mart.appspot.com",
-  messagingSenderId: "167192001936",
-  appId: "1:167192001936:web:27b34eddbd66bc9da28715"
+  apiKey:process.env.REACT_APP_apiKey,  
+  authDomain:process.env.REACT_APP_authDomain,  
+  projectId:process.env.REACT_APP_projectId,  
+  storageBucket:process.env.REACT_APP_storageBucket,  
+  messagingSenderId:process.env.REACT_APP_messagingSenderId,  
+  appId:process.env.REACT_APP_appId 
 };
 
 // Initialize Firebase
