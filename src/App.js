@@ -10,6 +10,7 @@ import Header from './component/Shared/Header/Header';
 import Login from './component/Auth/Login/Login';
 import Register from './component/Auth/Register/Register';
 import RequireAuth from './component/Auth/RequireAuth/RequireAuth';
+import ItemUpdate from './component/ItemUpdate/ItemUpdate';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Inventory></Inventory>
           </RequireAuth>
         }></Route>
+        <Route path='/item/:itemId' element={<ItemUpdate></ItemUpdate>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
