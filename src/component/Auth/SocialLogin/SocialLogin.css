@@ -1,0 +1,14 @@
+.diveder-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.diveder-container p{
+    color: #940909;
+}
+.diveder-container .devider{
+    width: 45%;
+    height: 2px;
+    background-color: #940909;
+}

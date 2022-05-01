@@ -1,0 +1,35 @@
+.form{
+    display: flex;
+    justify-content: center;
+}
+.form-container{
+    width: 400px;
+    border: 1px solid #940909;
+    padding: 20px;
+    border-radius: 5px;
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-content input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #940909;
+}
+.form-content input::placeholder{
+    color: #94090959;
+}
+.form-bottom{
+    text-align: left;
+}
+.form-bottom p{
+    color: #94090959;
+    margin-top: 5px;
+}
+.form-bottom p span{
+    color: #940909;
+}

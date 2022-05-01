@@ -7,7 +7,7 @@ import Blog from './component/Pages/Blog/Blog';
 import About from './component/Pages/About/About';
 import NotFound from './component/NotFound/NotFound';
 import Header from './component/Shared/Header/Header';
-import Login from './component/RequireAuth/Login/Login';
+import Login from './component/Auth/Login/Login';
 
 function App() {
   return (
