@@ -1,0 +1,28 @@
+.update-item{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 10px;
+    border: 1px solid #940909;
+    border-radius: 10px;
+    align-items: center;
+}
+.update-item-img{
+    background-color: #d9d5d83d;
+    border-radius: 10px;
+    padding: 20px;
+}
+.update-item-img img{
+    width: 100%;
+}
+.update-item-content h3{
+    font-size: 30px;
+    font-weight: 800;
+    color: #940909;
+    margin-bottom: 20px;
+}
+.update-item-content p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
