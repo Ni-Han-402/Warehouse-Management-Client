@@ -1,0 +1,19 @@
+.addItem-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.addItem-form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+}
+.addItem-form input, textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #940909;
+}
