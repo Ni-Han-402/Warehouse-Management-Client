@@ -32,6 +32,12 @@ const Header = () => {
                             <Link className='menu' to={'/inventory'}>Inventory</Link>
                             <Link className='menu' to={'/blog'}>Blog</Link>
                             <Link className='menu' to={'/about'}>About</Link>
+                            {
+                                user && <>
+                                <Link className='menu' to={'/manageitem'}>Manage Item</Link>
+                                <Link className='menu' to={'/additem'}>Add Item</Link>
+                                </>
+                            }
                         </div>
                         <div className="login">
                             {
