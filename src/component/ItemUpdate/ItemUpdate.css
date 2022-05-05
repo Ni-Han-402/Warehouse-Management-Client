@@ -29,3 +29,10 @@
     font-size: 18px;
     margin-bottom: 5px;
 }
+.update-item-btn input{
+    width: 50px;
+    margin-right: 10px;
+    border: 1px solid #940909;
+    padding: 5px;
+    border-radius: 5px;
+}

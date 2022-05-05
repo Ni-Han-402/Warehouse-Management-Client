@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './ItemUpdate.css'
 
 const ItemUpdate = () => {
     const { itemId } = useParams();
     const [item, setItem] = useState({});
+    const restockRef = useRef();
 
     useEffect(() => {
         const url = `http://localhost:5000/item/${itemId}`
@@ -12,6 +13,31 @@ const ItemUpdate = () => {
             .then(res => res.json())
             .then(data => setItem(data))
     }, [])
+
+    const handleDelete = () =>{
+        
+        const restock = parseInt(restockRef.current.value);
+        const newQuantity = parseInt(item.quantity) + restock;
+        const makeQuantity = {newQuantity}
+        console.log(newQuantity);
+
+        const url = `http://localhost:5000/item/${itemId}`
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(makeQuantity)
+        })
+        .then(res => res.json())
+        .then(result => {
+            console.log(result);
+            alert('Product Restocked')
+        })
+        
+    }
+
+
     return (
         <div>
             <div className="container">
@@ -25,7 +51,14 @@ const ItemUpdate = () => {
                         <p>{item.description}</p>
                         <p><small>Quantity: {item.quantity}</small></p>
                         <p><small>Supplier: {item.supplier}</small></p>
+                        <div className="update-item-btn">
+                            <input ref={restockRef} type="number" name="" />
+                            <button className='btn' onClick={() => handleDelete(item._id)}>Restock</button>
+                        </div>
                     </div>
+                </div>
+                <div className="deliver-btn">
+                    <button className='btn'>Delivered</button>
                 </div>
             </div>
         </div>
