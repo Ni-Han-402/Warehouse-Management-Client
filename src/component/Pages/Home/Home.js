@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react';
+
+import { useNavigate } from 'react-router-dom';
+import useItems from '../../../Hooks/useItems';
 import Banner from '../../Banner/Banner';
 import Item from '../../Item/Item';
 import './Home.css'
 
 const Home = () => {
-    const [items, setItems] = useState([]);
+    const [items, setItems] = useItems([]);
+    const navigate = useNavigate()
 
-    useEffect( () =>{
-        const url = 'http://localhost:5000/item';
-        fetch(url)
-        .then(res => res.json())
-        .then(data => setItems(data))
-    }, []);
+    const handleManageItem = () =>{
+        navigate('/manageitem')
+    }
     return (
         <div>
             <Banner></Banner>
@@ -22,9 +22,10 @@ const Home = () => {
                     items.map(item => <Item
                     key={item._id}
                     item={item}
-                    ></Item>)
+                    ></Item>).slice(0, 6)
                 }
                 </div>
+                <button onClick={handleManageItem} className='btn'>Manage All Item</button>
             </div>
         </div>
     );

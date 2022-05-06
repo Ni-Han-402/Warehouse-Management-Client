@@ -1,9 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useItems from '../../../Hooks/useItems';
 import './ManageItem.css'
 
 const ManageItem = () => {
     const [items, setItems] = useItems();
+    const navigate = useNavigate();
+
+    const navigateToUpdate = id =>{
+        navigate(`/item/${id}`);
+    }
 
     const handleDelete = id => {
         const procced = window.confirm('Are You Sure?');
@@ -35,7 +41,7 @@ const ManageItem = () => {
                             <p>Quantity: {item.quantity}</p>
                         </div>
                         <div className="manage-item-btn">
-                            <button className='btn'>Update</button>
+                            <button onClick={() => navigateToUpdate(item._id)} className='btn'>Update</button>
                             <button onClick={() => handleDelete(item._id)} className='btn'>Delete</button>
                         </div>
                     </div>)

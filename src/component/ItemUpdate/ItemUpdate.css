@@ -29,6 +29,11 @@
     font-size: 18px;
     margin-bottom: 5px;
 }
+.update-item-form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
 .update-item-btn input{
     width: 50px;
     margin-right: 10px;
