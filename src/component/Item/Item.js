@@ -9,6 +9,7 @@ const Item = ({ item }) => {
     const navigateToUpdate = id => {
         navigate(`/item/${id}`);
     }
+    
     return (
         <div className='item'>
             <div className="item-img">
@@ -18,14 +19,7 @@ const Item = ({ item }) => {
                 <h3>{name}</h3>
                 <p>Price: ${price}</p>
                 <p>{description}</p>
-                {
-                    quantity !== 0 ?
-                        <p><small>Quantity: {quantity}</small></p>
-                        :
-                        <button className='btn'>Sold</button>
-
-
-                }
+                <p><small>Quantity: {quantity}</small></p>
                 <p><small>Supplier: {supplier}</small></p>
                 <button onClick={() => navigateToUpdate(_id)} className='btn'>UPDATE</button>
             </div>

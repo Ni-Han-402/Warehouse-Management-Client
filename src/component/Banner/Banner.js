@@ -1,6 +1,5 @@
-import { Button } from 'bootstrap';
 import React from 'react';
-import banner from '../../images/banner-1.png'
+import banner from '../../images/banner.png'
 import './Banner.css'
 
 const Banner = () => {
@@ -8,7 +7,9 @@ const Banner = () => {
         <>
             <div className="container">
                 <div className="banner">
+                    <div className="banner-img">
                     <img src={banner} alt="" />
+                    </div>
                     <div className="banner-content">
                         <p>EXCLUSIVE OFFER <span>20%</span></p>
                         <h1>Perfect Furniture For You Home.</h1>

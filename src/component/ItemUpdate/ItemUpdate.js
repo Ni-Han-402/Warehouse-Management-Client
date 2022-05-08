@@ -11,7 +11,7 @@ const ItemUpdate = () => {
     const restockRef = useRef();
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${itemId}`
+        const url = `https://radiant-refuge-45393.herokuapp.com/item/${itemId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data))
@@ -24,7 +24,7 @@ const ItemUpdate = () => {
         const makeQuantity = { newQuantity }
         console.log(newQuantity);
 
-        const url = `http://localhost:5000/item/${itemId}`
+        const url = `https://radiant-refuge-45393.herokuapp.com/item/${itemId}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -46,7 +46,7 @@ const ItemUpdate = () => {
         const makeDeliveredQuantity = { newQuantity }
 
 
-        const url = `http://localhost:5000/item/${itemId}`
+        const url = `https://radiant-refuge-45393.herokuapp.com/item/${itemId}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -59,12 +59,12 @@ const ItemUpdate = () => {
                 console.log(result);
                 if(newQuantity >= 0){
                     setIsReload(newQuantity);
+
                 }
                 else{
                     alert('Product Not Available')
                     
-                }
-                
+                } 
                 
             })
     }
@@ -88,7 +88,7 @@ const ItemUpdate = () => {
                             <button className='btn' onClick={() => handleDelete(item._id)}>Restock</button>
                         </div>
                         <div className="deliver-btn">
-                            <button onClick={handleDeliverd} className='btn'>Delivered</button>
+                            <button onClick={handleDeliverd} className='btn'>Delivered</button>        
                         </div>
                     </div>
                 </div>

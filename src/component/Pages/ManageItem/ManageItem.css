@@ -1,6 +1,6 @@
 .manage-item{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     border: 1px solid #940909;
     border-radius: 5px;
@@ -8,9 +8,19 @@
     padding: 10px;
 }
 .manage-item-img img{
-    height: 100px;
+    width: 100%;
 }
 .manage-item-btn{
     display: flex;
+    justify-content: flex-end;
     gap: 10px;
+}
+
+@media (max-width: 600px){
+    .manage-item-content h2{
+        font-size: 14px;
+    }
+    .manage-item-content p{
+        font-size: 12px;
+    }
 }

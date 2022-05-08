@@ -4,7 +4,7 @@ const useItems = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        const url = 'http://localhost:5000/item';
+        const url = 'https://radiant-refuge-45393.herokuapp.com/item';
         fetch(url)
             .then(res => res.json())
             .then(data => setItems(data))

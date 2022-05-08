@@ -13,6 +13,8 @@ import RequireAuth from './component/Auth/RequireAuth/RequireAuth';
 import ItemUpdate from './component/ItemUpdate/ItemUpdate';
 import AddItem from './component/Pages/AddItem/AddItem';
 import ManageItem from './component/Pages/ManageItem/ManageItem';
+import MyItem from './component/Pages/MyItem/MyItem';
+import Footer from './component/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -36,6 +38,11 @@ function App() {
             <AddItem></AddItem>
           </RequireAuth>
         }></Route>
+        <Route path='/myitem' element={
+          <RequireAuth>
+            <MyItem></MyItem>
+          </RequireAuth>
+        }></Route>
         <Route path='/item/:itemId' element={<ItemUpdate></ItemUpdate>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/about' element={<About></About>}></Route>
@@ -43,6 +50,7 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

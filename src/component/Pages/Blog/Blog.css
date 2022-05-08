@@ -1,0 +1,30 @@
+.blog{
+    border: 1px solid #940909;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+    border-radius: 5px;
+}
+.blog h4{
+    color: #940909;
+    font-size: 20px;
+}
+.blog-ans{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.blog-ans li{
+    list-style: none;
+    margin-top: 20px;
+}
+.blog-ans li p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media (max-width: 600px){
+    .blog-ans{
+        grid-template-columns: 1fr;
+    }
+}

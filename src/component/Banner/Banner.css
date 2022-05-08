@@ -1,22 +1,17 @@
 .banner{
-    position: relative;
-}
-.banner img{
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     border-radius: 20px;
     margin-top: 30px;
+    padding: 20px;
     box-shadow: 1px 1px 5px 1px #cf818133;
+    align-items: center;
+}
+.banner-img img{
+    width: 100%;
 }
 .banner-content{
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    align-items: flex-start;
-    width: 45%;
-    position: absolute;
-    top: 30%;
-    right: 0;
-    margin-right: 20px;
+
 }
 .banner-content p{
     font-size: 18px;
@@ -50,4 +45,59 @@
     border-radius: 20px;
     color: #ffffff;
     padding: 10px 20px;
+}
+
+
+@media (max-width: 1080px){
+    .banner-content h1{
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    .banner-content p{
+        font-size: 15px;
+    }
+    .banner-content p span{
+        font-size: 20px;
+    }
+    .banner-content h3{
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    .banner-content h3 span{
+        font-size: 15px;
+    }
+    .banner-content .btn{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .banner{
+        grid-template-columns: 1fr;
+    }
+    .banner-img img{
+        width: 70%;
+    }
+    .banner-content h1{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .banner-content p{
+        font-size: 14px;
+    }
+    .banner-content p span{
+        font-size: 18px;
+    }
+    .banner-content h3{
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    .banner-content h3 span{
+        font-size: 14px;
+    }
+    .banner-content .btn{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }

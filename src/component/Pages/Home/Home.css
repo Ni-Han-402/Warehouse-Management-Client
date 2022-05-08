@@ -9,3 +9,45 @@
     grid-gap: 30px;
     margin-bottom: 20px;
 }
+.about-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+.about-section-img img{
+    width: 100%;
+}
+.about-section-content{
+    padding: 20px;
+    text-align: left;
+}
+.about-section-content ul li{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1080px){
+    .title{
+        font-size: 30px;
+    }
+    .best-furniture{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-section-content ul li{
+        font-size: 12px;
+    }
+}
+@media (max-width: 760px){
+    .about-section{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .title{
+        font-size: 20px;
+    }
+    .best-furniture{
+        grid-template-columns: 1fr;
+    }
+    
+}
