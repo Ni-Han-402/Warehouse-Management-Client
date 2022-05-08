@@ -1,6 +1,29 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SofaMart
+
+Firebase [Live Link](https://sofa-mart.web.app/).
+
+
+## Create
+
+ - [Home Section](https://sofa-mart.web.app/home)
+ - [About Section](https://sofa-mart.web.app/about)
+ - [Blog Section](https://sofa-mart.web.app/blog)
+ - [Manage Section](https://sofa-mart.web.app/manageitem)
+ - [My Item Section](https://sofa-mart.web.app/myitem)
+ - [Add Section](https://sofa-mart.web.app/additem)
+## Using Framwork/Library
+
+- React
+- React Router
+- React Boostrap
+- React Toast
+- React Firbase Hook
+- react-hook-form
+- React Icons
+- Axios
+
+
 
 ## Available Scripts
 
